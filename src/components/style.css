@@ -1,0 +1,18 @@
+.dragArea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.dragableBox {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.dropableArea {
+    padding: 10px;
+    border: 1px solid blue;
+}
