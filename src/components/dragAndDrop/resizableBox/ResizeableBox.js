@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {userEffect} from 'react';
 
 
 function ResizeableBox(props) {
+ 
     return (
         <div id={`${props.i}`}
             key={`container${props.i}`}
@@ -9,7 +10,7 @@ function ResizeableBox(props) {
             onDragOver={(e) => props.onDragOverFn(e)}
         >
             <div className="dragableBox"
-                onDrop={(e) => props.onDropFn(e, props.i, props.box.id)}
+                onDrop={(e) => props.onDropFn(e, props.i)}
                 key={props.i}
                 id={`box_${props.box.id}`}
                 index={props.i}
