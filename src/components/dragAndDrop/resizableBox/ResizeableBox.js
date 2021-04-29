@@ -16,7 +16,9 @@ function ResizeableBox(props) {
                 index={props.i}
                 draggable
                 onDragStart={(ev) => props.onDragBoxFn(ev, props.i)}
-            >{props.box.data}</div>
+            >
+                {/* below we can add a conditional for rendering graphs or text */}
+                {props.box.data}</div>
         </div>
     );
 }
