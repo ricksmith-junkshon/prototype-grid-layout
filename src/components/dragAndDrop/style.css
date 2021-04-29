@@ -11,8 +11,12 @@
     height: 200px;
     width: 200px;
     border: 1px solid black;
+    overflow: auto;
+    resize: both;
+    transition: all 2s;
 }
 .dropableArea {
     padding: 10px;
     border: 1px solid blue;
 }
+
